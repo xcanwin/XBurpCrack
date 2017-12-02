@@ -1,5 +1,7 @@
-dim dt,tm,ws,sp
+'code by xcanwin
+'https://github.com/xcanwin/
 
+dim dt,tm,ws,sp
 dt=date()
 tm=now()
 set ws=createobject("wscript.shell")

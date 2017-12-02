@@ -1,4 +1,7 @@
 #!/bin/bash
+# code by xcanwin
+# https://github.com/xcanwin/
+
 dt=`date "+%m/%d/%Y %H:%M:%S"`
 date -s "10/24/2014 00:00:00"
 hwclock -w
