@@ -14,12 +14,12 @@ else
   ws.run "cmd /c start BurpLoader.jar",0
 end if
 
-do while datediff("s", tm, now())<5
+do while 1
   wscript.sleep(500)
   if ws.appactivate("licensed to Larry_Lau") then
     ws.run "cmd /c date "&dt,0
     exit do
-  elseif ws.appactivate("BurpLoader.jar") then
+  elseif ws.appactivate("BurpLoader.jar") or datediff("s", tm, now())>20 then
     ws.run "cmd /c date "&dt,0
     msgbox "There is no Java environment or failure to start the burp!"
     exit do
